@@ -61,5 +61,3 @@ if uploaded_files:
 else:
     st.info("Por favor, carga archivos Excel para agregar datos adjuntos.")
 
-else:
-    st.info("Por favor, carga archivos Excel para agregar datos adjuntos.")
