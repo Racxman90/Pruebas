@@ -8,7 +8,7 @@ excel_file_path = ''
 # Frontend
 st.title('Adjuntar archivos Excel')
 # Agregar una imagen desde una ruta de archivo local
-st.image('GitHub\Imagen\logo.jpg', caption='Cargar Informacion', clamp=True)
+st.image(r'Imagen\logo.jpg', caption='Cargar Informacion', clamp=True)
 
 # Botón para enviar la información cargada
 submitted = st.button('Enviar')
@@ -33,7 +33,7 @@ if uploaded_files:
         all_data = pd.concat(dfs, ignore_index=True)
 
         # Ruta del archivo Excel existente
-        excel_file_path = r'C:\Users\usuario\Desktop\Python_Streamlist\GitHub\Data.xlsx'
+        excel_file_path = r'C:\Users\usuario\Desktop\Python_Streamlist\GitHub\Pruebas\Data.xlsx'
 
         # Nombre de la hoja de cálculo
         sheet_name = 'Hoja1'
@@ -57,6 +57,10 @@ if uploaded_files:
   
     except Exception as e:
         st.error("Ocurrió un error: " + str(e))
+
+else:
+    st.info("Por favor, carga archivos Excel para agregar datos adjuntos.")
+
 
 else:
     st.info("Por favor, carga archivos Excel para agregar datos adjuntos.")
