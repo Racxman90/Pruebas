@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 from openpyxl import load_workbook
-import pip
-pip.main(["install", "openpyxl"])
 
 # Definir ruta del archivo Excel existente 
 excel_file_path = ''
